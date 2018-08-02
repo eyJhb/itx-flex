@@ -1,0 +1,253 @@
+﻿/* Choose the location of the workspace */
+"WorkspaceChooseWorkspaceText"="Opret arbejdsbibliotek - Undermapper til opgavesæt og besvarelse bliver synlige ved eksamensstart (obligatorisk)";
+/* Assignment files have been downloaded but are locked until the proper PinCode is used to unlock it */
+"WorkspaceAssignmentFilesLockedText"="Når eksamen starter bliver knappen til at låse opgavesættet op aktiv. For at låse op, skal du bruge den Pinkode, der bliver gjort tilgængelig ved prøvestart.";
+/* Open popup to unlock assignment files */
+"WorkspaceShowAssignmentFilesUnlockButtonText"="Lås opgavesæt op";
+/* Open select folder popup */
+"WorkspaceSelectFolderButtonText"="Gennemse...";
+/* Path to assignment files */
+"WorkspaceAssignmentFilesPathText"="Dit opgavesæt placeres her";
+/* Path to hand in */
+"WorkspaceHandInPathText"="Din besvarelse skal placeres her";
+/* Information in popup about the PinCode to enter */
+"WorkspaceUnlockAssignmentFilesInformationText"="Indtast Pinkoden, du har fået i eksamenslokalet, for at få adgang til opgavesættet";
+/* In popup send PinCode and unlock assignment files */
+"WorkspaceUnlockAssignmentFilesButtonText"="Lås opgavesæt op";
+/* Time left until exam starts for 1 minute */
+"WorkspaceTimeUntilSingularText"="Din eksamen starter om 1 minut...";
+/* Time left until exam starts for 0 or >1 minute, %1$@ = number of minutes */
+"WorkspaceTimeUntilPluralText"="Din eksamen starter om %1$@ minutter...";
+/* Assignment files have been downloaded and are still encrypted*/
+"WorkspaceAssignmentFilesDownloadedText"="Opgavesættet er hentet, men er låst indtil start af eksamen";
+/* Name of hand in directory */
+"WorkspaceHandInDirectoryText"="Besvarelse";
+/* Name of assignment files directory */
+"WorkspaceAssignmentFilesDirectoryText"="Opgavesæt";
+/* Error message for empty pin code */
+"WorkspacePinCodeEmptyErrorText"="Pinkoden må ikke være tom";
+/* Error message for incorrect number of digits in pin code */
+"WorkspacePinCodeIncorrectNumberOfDigitsErrorText"="Pinkoden skal være på 5 tegn";
+/* Error message for pin code containing other characters than numbers */
+"WorkspacePinCodeOnlyNumbersAllowedErrorText"="Pinkoden må kun bestå af tal";
+/* Error message for invalid pin code */
+"WorkspacePinCodeInvalidErrorText"="Pinkoden er ikke gyldig";
+/* Error message for an error has happend */
+"WorkspacePinCodeGeneralErrorText"="Der er sket en fejl, prøv igen.";
+/* Assignment files are being downloaded */
+"WorkspaceAssignmentFilesDownloadingText"="Henter information omkring opgavesættet...";
+/* Assignment files failed downloading */
+"WorkspaceAssignmentFilesFailedDownloadingText"="Hentning af opgavesæt fejlede. Hent opgavesæt manuelt igennem Digital Eksamen:";
+/* Button text for error when user selects a directory they do not have write access to */
+"WorkspaceDirectoryAccessDeniedErrorButtonText"="Luk";
+/* Error message for error when user selects a directory they do not have proper access to */
+"WorkspaceDirectoryAccessDeniedErrorText"="Du har ikke adgang til det valgte arbejdsbibliotek. Sørg for, at du både har skriveadgang, og at længden af stien ikke er for lang.";
+/* Shown if redownload fails when PinCode is submitted */
+"WorkspacePinCodeCannotRedownloadErrorText"="Der er en ny version af opgavesættet tilgængeligt, men hentning fejlede. Hent opgavesæt manuelt igennem Digital Eksamen:";
+/* Button to continue even if assignment files have not been correctly loaded. */
+"WorkspaceForceContinueButtonText"="Fortsæt alligevel";
+/* Assignment files failed downloading */
+"WorkspaceAssignmentFilesNoFilesText"="Der er ikke tilknyttet noget opgavesæt til prøven.";
+/* In popup send PinCode when there is no assignment files */
+"WorkspacePinCodeStartExamWithoutAssignmentFilesButtonText"="Start eksamen";
+/* Open popup to start exam when there is no assignment files */
+"WorkspaceShowPinCodeUnlockWithoutAssignmentFilesButtonText"="Start eksamen";
+
+/* Header for health check */
+"HealthCheckStatusHeaderText"="Tjekker tilladelser og adgange på din computer";
+/* Start the examination process */
+"HealthCheckStartExaminationButtonText"="Start eksamen";
+/* Error in overall status */
+"HealthCheckOverallStatusErrorText"="Din ITX Flex applikation er ikke klar til eksamen.\nKlik for at få vist detaljer";
+/* On error, text for link to read more about how to handle it */
+"HealthCheckOnErrorReadMoreText"="Læs mere";
+/* Ok in overall status */
+"HealthCheckOverallStatusOkText"="Din ITX Flex applikation er klar til eksamen.";
+/* Ok in connection to backend */
+"HealthCheckConnectionHealthOkText"="Tjekker adgang til internettet...";
+/* Error in connection to backend */
+"HealthCheckConnectionHealthErrorText"="Tjekker adgang til internettet...";
+/* Full description of how to handle connection error */
+"HealthCheckConnectionHealthFullDescriptionText"="Sørg for, at der er adgang til internettet";
+/* Ok in file access */
+"HealthCheckFileAccessHealthOkText"="Tjekker adgang til filsystemer...";
+/* Error in file access */
+"HealthCheckFileAccessHealthErrorText"="Tjekker adgang til filsystemer...";
+/* Full description of how to handle file access error */
+"HealthCheckFileAccessHealthFullDescriptionText"="Sørg for, at programmet må skrive til den folder den er installeret i, og at der nok plads på disken";
+/* Ok in version check */
+"HealthCheckVersionHealthOkText"="Tjekker om klienten skal opdateres...";
+/* Error in version check */
+"HealthCheckVersionHealthErrorText"="Tjekker om klienten skal opdateres...";
+/* Full description of how to handle version check error */
+"HealthCheckVersionHealthFullDescriptionText"="Sørg for, at applikationen er opdateret til nyeste version. Hvis opdateringen fejler, så hent en ny version på nettet. Link hertil findes på prøven i Digital Eksamen";
+/* Automatic retry of healthchecks if failing, %1$@ = seconds until retry */
+"HealthCheckAutomaticRetryPluralText"="Prøver igen om %1$@ sekunder";
+/* Automatic retry of healthchecks if failing, 1 second to go */
+"HealthCheckAutomaticRetrySingularText"="Prøver igen om et øjeblik";
+/* On error, text for closing read more pop up */
+"HealthCheckOnErrorCloseReadMoreText"="Luk";
+
+/* Enter boarding pass */
+"LoginBoardingPassText"="Indtast din personlige kode";
+/* Boarding pass location */
+"LoginBoardingPassHelperText"="(Du finder din personlige kode på prøven, når du logger på Digital Eksamen)";
+/* Start the login procedure */
+"LoginBoardingPassContinueButtonText"="Fortsæt >>";
+/* Error message for empty boarding pass */
+"LoginBoardingPassEmptyErrorText"="Din personlige kode må ikke være tom";
+/* Error message for incorrect number of digits in boarding pass */
+"LoginBoardingPassIncorrectNumberOfDigitsErrorText"="Din personlige kode skal være 6 tegn";
+/* Button to close error message when login failed */
+"LoginFailedLoginButtonText"="Ok";
+/* Text to show user when login failed */
+"LoginFailedLoginText"="Dit login er fejlet. Prøv venligst igen.";
+/* Text to show when user tried to login using an invalid boarding pass */
+"LoginUnauthorizedBoardingPassText"="Din kode er ikke gyldig. Tjek venligst, at du bruger den rigtige kode.";
+
+/* Title of main window, %1$@ = official version name, %2$@ = internal version number */
+"MainWindowTitle"="ITX Flex %1$@ (%2$@)";
+/* Information to user about what happends if program is closed before exam is finished */
+"MainWindowWarnOnCloseText"="Du er ved at lukke programmet før eksamen er afsluttet. Er du sikker på du vil fortsætte?";
+/* Button pressed when the user accepts the warning */
+"MainWindowWarnOnCloseOkButtonText"="Ok";
+/* Button pressed if the user does not want to quit */
+"MainWindowWarnOnCloseCancelButtonText"="Annuller";
+
+/* Header for ongoing examination */
+"OngoingExamHeaderText"="Eksamen er i gang";
+/* Time since last backup for 0 or >1 minute, %1$@ = number of minutes */
+"OngoingExamSaveStatusPluralText"="Du har sidst gemt dit/dine besvarelsesdokument(er) for %1$@ minutter siden.";
+/* Time since last backup for 1 minute */
+"OngoingExamSaveStatusSingularText"="Du har sidst gemt dit/dine besvarelsesdokument(er) for 1 minut siden.";
+/* Time until examination ends for 0 or >1 minute, %1$@ = number of minutes */
+"OngoingExamTimeLeftPluralText"="Din eksamen slutter om %1$@ minutter...";
+/* Time until examination ends for 1 minute */
+"OngoingExamTimeLeftSingularText"="Din eksamen slutter om 1 minut...";
+/* Text for assignment files path */
+"OngoingExamAssignmentFilesPathText"="Placering af opgavesæt";
+/* Text for hand in path */
+"OngoingExamHandInPathText"="Placering af besvarelsen";
+/* Text for exam title */
+"OngoingExamExamTitleText"="Eksamenstitel";
+/* Initiate submitting of HandIn button text*/
+"OngoingExamSubmitHandInButtonText"="Påbegynd aflevering";
+/* Text for exam title */
+"OngoingExamSubmitBlankButtonText"="Aflever blankt";
+/* Message in popup to confirm that the user wants to submit blank */
+"OngoingExamConfirmSubmitBlankMessageText"="Er du sikker på at du vil aflevere blankt?";
+/* Text for confirming blank submission */
+"OngoingExamConfirmSubmitBlankButtonText"="Ja";
+/* Text for cancelling blank submission */
+"OngoingExamCancelSubmitBlankButtonText"="Annuller";
+/* Text when you are only allowed to hand in through external system */
+"OngoingExamOnlyExternalHandinEnabledText"="Du skal aflevere din besvarelse i Digital Eksamen:";
+/* Text when you are not yet allowed to hand in because of status from external system */
+"OngoingExamNotYetAllowedToHandInText"="Du er ikke blevet registreret som fremmødt af en tilsynsperson og kan derfor ikke aflevere";
+
+/* Header for hand in received */
+"HandInReceivedTypeHandinHeaderText"="Din besvarelse er modtaget.";
+/* Header for hand in received when student has submitted blank */
+"HandInReceivedTypeBlankHeaderText"="Du har afleveret blankt.";
+/* Information about actions that can be done outside program */
+"HandInReceivedDoneText"="Du behøver ikke at foretage dig yderligere. Log på Digital Eksamen for at se din afleveringskvittering.";
+/* Information about duration of surveillance */
+"HandInReceivedSurveillanceText"="Overvågningen kører indtil du afslutter programmet eller din eksamens sluttid overskrides med 15 min.";
+/* Close the program */
+"HandInReceivedEndProgramButtonText"="Afslut programmet";
+/* Header for hand in received when student has submitted after the deadline */
+"HandInReceivedUploadedLateWarningText"="Bemærk: Din aflevering har overskredet tidsgrænsen.";
+/* Text for description about link to the examination */
+"HandInReceivedExaminationUrlText"="Link til Digital Eksamen:";
+
+/* Shown to user while downloading updates*/
+"UpdateProgramUpdatingText"="Opdaterer...";
+
+/* Healthcheck state in overview */
+"StateHealthCheckText"="SELVDIAGNO-STICERING";
+/* Login state in overview */
+"StateLoginText"="LOGIN";
+/* Workspace state in overview */
+"StateWorkspaceText"="KLARMELD DIN COMPUTER";
+/* Ongoing exam state in overview */
+"StateOngoingExamText"="EKSAMEN ER I GANG";
+/* Hand in received state in overview */
+"StateHandInReceivedText"="EKSAMEN ER AFSLUTTET";
+
+/* Error text for bool type validator for HandInField */
+"HandInFieldBoolValueValidatorInvalidErrorText"="Input skal være sandt eller falsk";
+/* Error text for int type validator for HandInField */
+"HandInFieldIntValueValidatorInvalidErrorText"="Input skal være et helt tal";
+/* Error text for decimal type validator for HandInField */
+"HandInFieldDecimalValueValidatorInvalidErrorText"="Input skal være et kommatal med maksimalt et ',' eller '.'";
+/* Error text for string type validator for HandInField */
+"HandInFieldStringValueValidatorInvalidErrorText"="Input skal være en tekst";
+/* Error text for required field for HandInField */
+"HandInFieldFieldRequiredErrorText"="Dette felt skal udfyldes";
+/* Yes option for bool value type */
+"HandInFieldBoolYesText"="Ja";
+/* No option for bool value type */
+"HandInFieldBoolNoText"="Nej";
+
+/* Title for main document when selecting file to upload as main document */
+"HandInFileSelectorMainDocumentText"="Hoveddokument";
+/* Button text for selecting the main document */
+"HandInFileSelectorChooseMainDocumentButtonText"="Vælg";
+/* Title for attachments when selecting files to upload as attachments */
+"HandInFileSelectorAttachmentsText"="Bilag";
+/* Button text for selecting attachments */
+"HandInFileSelectorChooseAttachmentButtonText"="Tilføj";
+/* Description text for which formats are allowed for the main document */
+"HandInFileSelectorAllowedFormatsText"="Følgende formater er tilladte: ";
+/* Text for valid extension formats in filepicker */
+"HandInFileSelectorValidExtensionsText"="Tilladte formater";
+/* Button text for removing the main document after one has been selected */
+"HandInFileSelectorRemoveMainDocumentButtonText"="Fjern";
+/* Button text for removing an attachment after one has been selected */
+"HandInFileSelectorRemoveAttachmentButtonText"="Fjern";
+/* Text for main document being required */
+"HandInFileSelectorMainDocumentRequiredText"="Påkrævet";
+/* Message when user selects main document or attachment with a filename that already has been added. */
+"HandInFileSelectorAddDuplicatesMessageText"="Den eller de valgte file er allerede tilføjet som hoveddokument eller bilag. Er du sikker på du vil tilføje dem?";
+/* Button text for adding duplicate main document or attachments. */
+"HandInFileSelectorDuplicatesAddButtonText"="Tilføj";
+/* Button text for cancelling the adding of duplicate main document or attachments. */
+"HandInFileSelectorDuplicatesCancelButtonText"="Annuller";
+/* Explanatory text for popup when one or more attachment files are too large to be handed in, %1$@ = File size limit, %2$@ = List of files that exceeds limit */
+"HandInFileSelectorAttachmentsExceedsFileLimitMessageText"="Følgende filer er større end den tilladte størrelse på %1$@ MB:\n%2$@";
+/* Explanatory text for popup when main document is too large to be handed in, %1$@ = File size limit */
+"HandInFileSelectorMainDocumentExceedsFileLimitMessageText"="Hoveddokumentet er større end den tilladte størrelse på %1$@ MB";
+/* Button text acknowledging that one or more files are larger than what is allowed for hand ins. */
+"HandInFileSelectorFilesExceedsFileLimitOkButtonText"="Ok";
+
+/* Button text for going back to the ongoing exam view */
+"SubmitHandInGoBackToOngoingExamButtonText"="Forrige";
+/* Button text for submitting hand in */
+"SubmitHandInGoToSubmitHandInButtonText"="Tjek ud og afslut eksamen";
+/* Header text for the list of HandInFields to be filled out */
+"SubmitHandInHeaderText"="Besvarelsesinformationer:";
+/* Explanatory text for the symbol for IsRequired for a HandInField */
+"SubmitHandInIsRequiredText"="Skal udfyldes";
+/* Text for when the student has to finally confirm his selection to submit hand in */
+"SubmitHandInConfirmSubmissionMessageText"="Er du sikker på du vil aflevere din opgave? Hvis du accepterer, er din besvarelse afleveret og du kan ikke lave flere ændringer.";
+/* Text for the button to accept submitting */
+"SubmitHandInConfirmSubmissionOkButtonText"="Jeg accepterer";
+/* Text for the button to cancel submitting */
+"SubmitHandInConfirmSubmissionCancelButtonText"="Annuller";
+
+/* Information to the user that the hand in has been registered in the system */
+"HandInSubmittingSubmissionRegisteredText"="Besvarelsen er registreret.";
+/* Text for the button to cancel submitting */
+"HandInSubmittingWarningCloseText"="Du må IKKE lukke dette program endnu...";
+/* Text for the button to cancel submitting */
+"HandInSubmittingReceiptDetailsText"="Når din besvarelse er overført til Digital Eksamen, vil du kunne se din kvittering, der også sendes til dig via din email.";
+/* Status text when the user has submitted his hand in too late */
+"HandInSubmittingTaggedLateText"="Bemærk: Din aflevering har overskredet tidsgrænsen for denne opgave.";
+/* Status text when the user is uploading the hand in */
+"HandInSubmittingUploadingStatusText"="Uploader filer...";
+/* Status text when the user is done uploading and awaiting heartbeat to progress */
+"HandInSubmittingDoneStatusText"="Upload færdig, afventer status...";
+/* Status text when the user is in queue to get upload slot */
+"HandInSubmittingPendingQueueStatusText"="Venter i kø...";
+/* Status text when an error has happened and upload through client is not possible */
+"HandInSubmittingErrorStatusText"="Der er sket en fejl. Upload aflevering manuelt igennem Digital Eksamen:";

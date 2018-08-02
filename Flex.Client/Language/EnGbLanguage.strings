@@ -1,0 +1,253 @@
+﻿/* Choose the location of the workspace */
+"WorkspaceChooseWorkspaceText"="Create working directory - Subfolders for Assignment and Submission will be visible when the exam begins (Mandatory)";
+/* Assignment files have been downloaded but are locked until the proper PinCode is used to unlock it */
+"WorkspaceAssignmentFilesLockedText"="When the exam begins, the button to unlock the exam materials is activated. To unlock the exam assignment, you need to enter the code which was made available at the beginning of the exam.";
+/* Open popup to unlock assignment files */
+"WorkspaceShowAssignmentFilesUnlockButtonText"="Unlock exam assignment";
+/* Open select folder popup */
+"WorkspaceSelectFolderButtonText"="Browse...";
+/* Path to assignment files */
+"WorkspaceAssignmentFilesPathText"="Your exam assignment will be placed here";
+/* Path to hand in */
+"WorkspaceHandInPathText"="Place your exam paper here";
+/* Information in popup about the PinCode to enter */
+"WorkspaceUnlockAssignmentFilesInformationText"="Enter the pincode you were given in the examination room in order to access the exam assignment";
+/* In popup send PinCode and unlock assignment files */
+"WorkspaceUnlockAssignmentFilesButtonText"="Unlock exam assignment";
+/* Time left until exam starts for 1 minute */
+"WorkspaceTimeUntilSingularText"="Your exam starts in one minute...";
+/* Time left until exam starts for 0 or >1 minute, %1$@ = number of minutes */
+"WorkspaceTimeUntilPluralText"="Your exam starts in %1$@ minutes...";
+/* Assignment files have been downloaded and are still encrypted*/
+"WorkspaceAssignmentFilesDownloadedText"="The exam materials have been downloaded, but are locked until the exam starts";
+/* Name of hand in directory */
+"WorkspaceHandInDirectoryText"="Exam paper";
+/* Name of assignment files directory */
+"WorkspaceAssignmentFilesDirectoryText"="Exam assignment";
+/* Error message for empty pin code */
+"WorkspacePinCodeEmptyErrorText"="The pincode must not be blank";
+/* Error message for incorrect number of digits in pin code */
+"WorkspacePinCodeIncorrectNumberOfDigitsErrorText"="The pincode must include five characters";
+/* Error message for pin code containing other characters than numbers */
+"WorkspacePinCodeOnlyNumbersAllowedErrorText"="The pincode may only consist of numbers";
+/* Error message for invalid pin code */
+"WorkspacePinCodeInvalidErrorText"="The pincode is not valid";
+/* Error message for an error has happend */
+"WorkspacePinCodeGeneralErrorText"="An error has occurred. Please try again.";
+/* Assignment files are being downloaded */
+"WorkspaceAssignmentFilesDownloadingText"="Retrieving information about the exam assignment...";
+/* Assignment files failed downloading */
+"WorkspaceAssignmentFilesFailedDownloadingText"="Download of exam assignment failed. Retrieve the exam assignment manually from the Digital Exams system:";
+/* Button text for error when user selects a directory they do not have write access to */
+"WorkspaceDirectoryAccessDeniedErrorButtonText"="Close";
+/* Error message for error when user selects a directory they do not have proper access to */
+"WorkspaceDirectoryAccessDeniedErrorText"="You do not have access to the chosen work directory. Please make sure that you have write access and that the length of the path is not too long.";
+/* Shown if redownload fails when PinCode is submitted */
+"WorkspacePinCodeCannotRedownloadErrorText"="There is a new version of the exam assignment available but the download failed. Retrieve the exam assignment manually from the Digital Exams system:";
+/* Button to continue even if assignment files have not been correctly loaded. */
+"WorkspaceForceContinueButtonText"="Continue anyway";
+/* Assignment files failed downloading */
+"WorkspaceAssignmentFilesNoFilesText"="No exam assignment has been assigned to the exam.";
+/* In popup send PinCode when there is no assignment files */
+"WorkspacePinCodeStartExamWithoutAssignmentFilesButtonText"="Start exam";
+/* Open popup to start exam when there is no assignment files */
+"WorkspaceShowPinCodeUnlockWithoutAssignmentFilesButtonText"="Start exam";
+
+/* Header for health check */
+"HealthCheckStatusHeaderText"="Checking permissions and access rights on your computer";
+/* Start the examination process */
+"HealthCheckStartExaminationButtonText"="Start the exam";
+/* Error in overall status */
+"HealthCheckOverallStatusErrorText"="Your ITX Flex application is not ready for the exam. \nClick for details";
+/* On error, text for link to read more about how to handle it */
+"HealthCheckOnErrorReadMoreText"="Read more";
+/* Ok in overall status */
+"HealthCheckOverallStatusOkText"="Your ITX Flex application is ready for the exam.";
+/* Ok in connection to backend */
+"HealthCheckConnectionHealthOkText"="Checking internet access...";
+/* Error in connection to backend */
+"HealthCheckConnectionHealthErrorText"="Checking internet access...";
+/* Full description of how to handle connection error */
+"HealthCheckConnectionHealthFullDescriptionText"="Make sure you have access to the internet";
+/* Ok in file access */
+"HealthCheckFileAccessHealthOkText"="Checking access to file systems";
+/* Error in file access */
+"HealthCheckFileAccessHealthErrorText"="Checking access to file systems";
+/* Full description of how to handle file access error */
+"HealthCheckFileAccessHealthFullDescriptionText"="Make sure that the program can write to the folder it is installed in, and that there is sufficient disk space";
+/* Ok in version check */
+"HealthCheckVersionHealthOkText"="Checking whether the client requires updating...";
+/* Error in version check */
+"HealthCheckVersionHealthErrorText"="Checking whether the client requires updating...";
+/* Full description of how to handle version check error */
+"HealthCheckVersionHealthFullDescriptionText"="Make sure that the application is updated to the newest version. If the update fails, download a new version from the internet. A link can be found in the Digital Exams system";
+/* Automatic retry of healthchecks if failing, %1$@ = seconds until retry */
+"HealthCheckAutomaticRetryPluralText"="Trying again in %1$@ seconds";
+/* Automatic retry of healthchecks if failing, 1 second to go */
+"HealthCheckAutomaticRetrySingularText"="Trying again in a moment";
+/* On error, text for closing read more pop up */
+"HealthCheckOnErrorCloseReadMoreText"="Close";
+
+/* Enter boarding pass */
+"LoginBoardingPassText"="Enter your personal code";
+/* Boarding pass location */
+"LoginBoardingPassHelperText"="(The personal code is provided to you when you when you log on to the Digital Exams system)";
+/* Start the login procedure */
+"LoginBoardingPassContinueButtonText"="Continue >>";
+/* Error message for empty boarding pass */
+"LoginBoardingPassEmptyErrorText"="Your personal code cannot be blank";
+/* Error message for incorrect number of digits in boarding pass */
+"LoginBoardingPassIncorrectNumberOfDigitsErrorText"="Your personal code must consist of six characters";
+/* Button to close error message when login failed */
+"LoginFailedLoginButtonText"="OK";
+/* Text to show user when login failed */
+"LoginFailedLoginText"="Your login failed. Please try again.";
+/* Text to show when user tried to login using an invalid boarding pass */
+"LoginUnauthorizedBoardingPassText"="Your code is not valid. Please check that you are using the correct code.";
+
+/* Title of main window, %1$@ = official version name, %2$@ = internal version number */
+"MainWindowTitle"="ITX Flex %1$@ (%2$@)";
+/* Information to user about what happends if program is closed before exam is finished */
+"MainWindowWarnOnCloseText"="You are about to close the program before the exam is over. Are you sure that you want to continue?";
+/* Button pressed when the user accepts the warning */
+"MainWindowWarnOnCloseOkButtonText"="Ok";
+/* Button pressed if the user does not want to quit */
+"MainWindowWarnOnCloseCancelButtonText"="Cancel";
+
+/* Header for ongoing examination */
+"OngoingExamHeaderText"="The exam is in progress";
+/* Time since last backup for 0 or >1 minute, %1$@ = number of minutes */
+"OngoingExamSaveStatusPluralText"="You saved your/your exam paper document(s) %1$@ minutes ago.";
+/* Time since last backup for 1 minute */
+"OngoingExamSaveStatusSingularText"="You saved your/your exam paper document(s) one minute ago.";
+/* Time until examination ends for 0 or >1 minute, %1$@ = number of minutes */
+"OngoingExamTimeLeftPluralText"="Your exam will end in %1$@ minutes...";
+/* Time until examination ends for 1 minute */
+"OngoingExamTimeLeftSingularText"="Your exam will end in one minute...";
+/* Text for assignment files path */
+"OngoingExamAssignmentFilesPathText"="Placement of the exam assignment";
+/* Text for hand in path */
+"OngoingExamHandInPathText"="Placement of the exam paper";
+/* Text for exam title */
+"OngoingExamExamTitleText"="Exam title";
+/* Initiate submitting of HandIn button text*/
+"OngoingExamSubmitHandInButtonText"="Initiate submission";
+/* Text for exam title */
+"OngoingExamSubmitBlankButtonText"="Submit blank exam";
+/* Message in popup to confirm that the user wants to submit blank */
+"OngoingExamConfirmSubmitBlankMessageText"="Are you sure that you want to submit a blank exam?";
+/* Text for confirming blank submission */
+"OngoingExamConfirmSubmitBlankButtonText"="Yes";
+/* Text for cancelling blank submission */
+"OngoingExamCancelSubmitBlankButtonText"="Cancel";
+/* Text when you are only allowed to hand in through external system */
+"OngoingExamOnlyExternalHandinEnabledText"="Submission must be done through the Digital Exams system:";
+/* Text when you are not yet allowed to hand in because of status from external system */
+"OngoingExamNotYetAllowedToHandInText"="You have not been registered as 'In Attendance' by an invigilator and therefore cannot submit";
+
+/* Header for hand in received */
+"HandInReceivedTypeHandinHeaderText"="Your exam paper has been successfully submitted.";
+/* Header for hand in received when student has submitted blank */
+"HandInReceivedTypeBlankHeaderText"="You have submitted a blank exam.";
+/* Information about actions that can be done outside program */
+"HandInReceivedDoneText"="You can log on to the Digital Exams system at any time to view and print out your confirmation of submission";
+/* Information about duration of surveillance */
+"HandInReceivedSurveillanceText"="Monitoring will continue until you exit the program or until the exam deadline has been exceeded by 15 minutes";
+/* Close the program */
+"HandInReceivedEndProgramButtonText"="Exit the program";
+/* Header for hand in received when student has submitted after the deadline */
+"HandInReceivedUploadedLateWarningText"="You have submitted your exam after the deadline for this exam has passed.";
+/* Text for description about link to the examination */
+"HandInReceivedExaminationUrlText"="Link to the Digital Exams system:";
+
+/* Shown to user while downloading updates*/
+"UpdateProgramUpdatingText"="Updating...";
+
+/* Healthcheck state in overview */
+"StateHealthCheckText"="SETUP";
+/* Login state in overview */
+"StateLoginText"="LOGIN";
+/* Workspace state in overview */
+"StateWorkspaceText"="START EXAM";
+/* Ongoing exam state in overview */
+"StateOngoingExamText"="EXAM IN PROGRESS";
+/* Hand in received state in overview */
+"StateHandInReceivedText"="EXAM OVER";
+
+/* Error text for bool type validator for HandInField */
+"HandInFieldBoolValueValidatorInvalidErrorText"="Input must be 'True' og 'False'";
+/* Error text for int type validator for HandInField */
+"HandInFieldIntValueValidatorInvalidErrorText"="Input must be a whole number";
+/* Error text for decimal type validator for HandInField */
+"HandInFieldDecimalValueValidatorInvalidErrorText"="Input must be a numeric value with only one decimal separator ',' or '.'";
+/* Error text for string type validator for HandInField */
+"HandInFieldStringValueValidatorInvalidErrorText"="Input must be text";
+/* Error text for required field for HandInField */
+"HandInFieldFieldRequiredErrorText"="This field must be filled in";
+/* Yes option for bool value type */
+"HandInFieldBoolYesText"="Yes";
+/* No option for bool value type */
+"HandInFieldBoolNoText"="No";
+
+/* Title for main document when selecting file to upload as main document */
+"HandInFileSelectorMainDocumentText"="Main document";
+/* Button text for selecting the main document */
+"HandInFileSelectorChooseMainDocumentButtonText"="Choose";
+/* Title for attachments when selecting files to upload as attachments */
+"HandInFileSelectorAttachmentsText"="Attachments";
+/* Button text for selecting attachments */
+"HandInFileSelectorChooseAttachmentButtonText"="Add";
+/* Description text for which formats are allowed for the main document */
+"HandInFileSelectorAllowedFormatsText"="The following formats are allowed: ";
+/* Text for valid extension formats in filepicker */
+"HandInFileSelectorValidExtensionsText"="Valid formats";
+/* Button text for removing the main document after one has been selected */
+"HandInFileSelectorRemoveMainDocumentButtonText"="Remove";
+/* Button text for removing an attachment after one has been selected */
+"HandInFileSelectorRemoveAttachmentButtonText"="Remove";
+/* Text for main document being required */
+"HandInFileSelectorMainDocumentRequiredText"="Required";
+/* Message when user selects main document or attachment with a filename that already has been added. */
+"HandInFileSelectorAddDuplicatesMessageText"="The chosen file(s) have already been added as main document or attachments. Are you sure that you want to add them?";
+/* Button text for adding duplicate main document or attachments. */
+"HandInFileSelectorDuplicatesAddButtonText"="Add";
+/* Button text for cancelling the adding of duplicate main document or attachments. */
+"HandInFileSelectorDuplicatesCancelButtonText"="Cancel";
+/* Explanatory text for popup when one or more attachment files are too large to be handed in, %1$@ = File size limit, %2$@ = List of files that exceeds limit */
+"HandInFileSelectorAttachmentsExceedsFileLimitMessageText"="The following files are larger than the allowed size of %1$@ MB:\n%2$@";
+/* Explanatory text for popup when main document is too large to be handed in, %1$@ = File size limit */
+"HandInFileSelectorMainDocumentExceedsFileLimitMessageText"="The main document is larger than the allowed size of %1$@ MB";
+/* Button text acknowledging that one or more files are larger than what is allowed for hand ins. */
+"HandInFileSelectorFilesExceedsFileLimitOkButtonText"="Ok";
+
+/* Button text for going back to the ongoing exam view */
+"SubmitHandInGoBackToOngoingExamButtonText"="Previous";
+/* Button text for submitting hand in */
+"SubmitHandInGoToSubmitHandInButtonText"="Check out and end the exam";
+/* Header text for the list of HandInFields to be filled out */
+"SubmitHandInHeaderText"="Information about submission:";
+/* Explanatory text for the symbol for IsRequired for a HandInField */
+"SubmitHandInIsRequiredText"="Must be filled out";
+/* Text for when the student has to finally confirm his selection to submit hand in */
+"SubmitHandInConfirmSubmissionMessageText"="Are you sure that you want to submit your exam? Once you confirm submission, you will not be able to make further changes.";
+/* Text for the button to accept submitting */
+"SubmitHandInConfirmSubmissionOkButtonText"="I Accept";
+/* Text for the button to cancel submitting */
+"SubmitHandInConfirmSubmissionCancelButtonText"="Cancel";
+
+/* Information to the user that the hand in has been registered in the system */
+"HandInSubmittingSubmissionRegisteredText"="Your exam submission has been registered.";
+/* Text for the button to cancel submitting */
+"HandInSubmittingWarningCloseText"="Do NOT close this program yet...";
+/* Text for the button to cancel submitting */
+"HandInSubmittingReceiptDetailsText"="After your submission has been sent to the Digital Exams system, you will be able to view a receipt online. The receipt will also also be sent to your email.";
+/* Status text when the user has submitted his hand in too late */
+"HandInSubmittingTaggedLateText"="Note: You have submitted your exam after the deadline for this exam has passed.";
+/* Status text when the user is uploading the hand in */
+"HandInSubmittingUploadingStatusText"="Uploading files...";
+/* Status text when the user is done uploading and awaiting heartbeat to progress */
+"HandInSubmittingDoneStatusText"="Upload done, awaiting status...";
+/* Status text when the user is in queue to get upload slot */
+"HandInSubmittingPendingQueueStatusText"="Waiting in queue...";
+/* Status text when an error has happened and upload through client is not possible */
+"HandInSubmittingErrorStatusText"="An error has occurred. Upload hand in through the Digital Exams system:";
