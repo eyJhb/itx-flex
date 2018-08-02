@@ -1,0 +1,17 @@
+<UserControl x:Class="Itx.Flex.Client.View.UpdateProgramView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Itx.Flex.Client.View"
+             xmlns:viewModel="clr-namespace:Itx.Flex.Client.ViewModel">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Control Margin="0,0,0,10" Style="{StaticResource BusyAnimationStyle}"/>
+    <TextBlock Grid.Row="1" Margin="0,10,0,0" HorizontalAlignment="Center"
+               Text="{Binding UpdateProgramUpdatingText}"/>
+  </Grid>
+</UserControl>

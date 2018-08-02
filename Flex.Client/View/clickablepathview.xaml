@@ -1,0 +1,12 @@
+<UserControl x:Class="Itx.Flex.Client.View.ClickablePathView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:Itx.Flex.Client.ViewModel">
+  <TextBlock>
+    <Hyperlink TextDecorations="None" Command="{Binding OpenBrowserToPathCommand}">
+      <TextBlock TextWrapping="Wrap" TextDecorations="Underline" Text="{Binding DisplayName}"/>
+    </Hyperlink>
+  </TextBlock>
+</UserControl>

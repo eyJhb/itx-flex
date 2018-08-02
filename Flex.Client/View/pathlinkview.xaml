@@ -1,0 +1,21 @@
+<UserControl x:Class="Itx.Flex.Client.View.PathLinkView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:Itx.Flex.Client.ViewModel"
+             xmlns:view="clr-namespace:Itx.Flex.Client.View">
+  <FrameworkElement.Resources>
+    <DataTemplate DataType="{x:Type viewModel:ClickablePathViewModel}">
+      <view:ClickablePathView/>
+    </DataTemplate>
+  </FrameworkElement.Resources>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <TextBlock FontWeight="Bold" Text="{Binding PathText}"/>
+    <ContentControl Grid.Row="1" Margin="0,5,0,0" Content="{Binding ClickablePathViewModel}"/>
+  </Grid>
+</UserControl>

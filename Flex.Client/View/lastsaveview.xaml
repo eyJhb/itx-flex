@@ -1,0 +1,11 @@
+<UserControl x:Class="Itx.Flex.Client.View.LastSaveView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:Itx.Flex.Client.ViewModel"
+             xmlns:converter="clr-namespace:Itx.Flex.Client.Converter"
+             xmlns:model="clr-namespace:Itx.Flex.Client.Model">
+  <TextBlock Grid.Row="0" Grid.Column="1" FontStyle="Italic" TextWrapping="Wrap"
+             Text="{Binding OngoingExamSaveStatusText}"/>
+</UserControl>

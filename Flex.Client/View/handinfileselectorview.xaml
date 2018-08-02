@@ -1,0 +1,87 @@
+<UserControl x:Class="Itx.Flex.Client.View.HandInFileSelectorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:Itx.Flex.Client.ViewModel"
+             xmlns:view="clr-namespace:Itx.Flex.Client.View"
+             xmlns:converter="clr-namespace:Itx.Flex.Client.Converter">
+  <FrameworkElement.Resources>
+    <converter:EmptyListToVisibilityConverter x:Key="EmptyListToVisibilityConverter"/>
+    <converter:ListToCommaSeparatedStringConverter x:Key="ListToCommaSeparatedStringConverter"/>
+    <converter:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+    <DataTemplate DataType="{x:Type viewModel:ClickablePathViewModel}">
+      <view:ClickablePathView/>
+    </DataTemplate>
+  </FrameworkElement.Resources>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <TextBlock FontWeight="Bold" Margin="5,5,0,5" Text="{Binding HandInFileSelectorMainDocumentText}"/>
+    <TextBlock Margin="0,5,5,5" Grid.Column="1" Grid.Row="0" Text="*"/>
+    <StackPanel Orientation="Horizontal" Margin="5" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                Visibility="{Binding SelectedMainDocument, Converter={StaticResource NullToVisibilityConverter}}">
+      <ContentControl VerticalAlignment="Center" Content="{Binding SelectedMainDocument.ClickablePathViewModel}"/>
+      <TextBlock VerticalAlignment="Center" Margin="15,3,0,0">
+        <Hyperlink TextDecorations="None" Command="{Binding RemoveMainDocumentCommand}"
+                   CommandParameter="{Binding SelectedMainDocument.HandInFileModel.Name}">
+          <Image Source="../Resources/RemoveIcon.png"/>
+        </Hyperlink>
+      </TextBlock>
+    </StackPanel>
+    <Button Margin="5" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right"
+            Style="{StaticResource PrimaryButtonStyle}"
+            Content="{Binding HandInFileSelectorChooseMainDocumentButtonText}"
+            Command="{Binding ChooseMainDocumentCommand}"/>
+    <TextBlock FontWeight="Bold" Margin="5" Grid.Column="0" Grid.Row="2"
+               Text="{Binding HandInFileSelectorAttachmentsText}"/>
+    <ItemsControl x:Name="AttachmentListControl" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"
+                  ItemsSource="{Binding SelectedAttachments}">
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Margin="5" Orientation="Horizontal">
+            <ContentControl VerticalAlignment="Center" Content="{Binding ClickablePathViewModel}"/>
+            <TextBlock VerticalAlignment="Center" Margin="15,3,0,0">
+              <Hyperlink TextDecorations="None"
+                         Command="{Binding DataContext.RemoveAttachmentCommand, ElementName=AttachmentListControl}"
+                         CommandParameter="{Binding HandInFileModel.Name}">
+                <Image Source="../Resources/RemoveIcon.png"/>
+              </Hyperlink>
+            </TextBlock>
+          </StackPanel>
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+    <Button Margin="5" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Top"
+            Style="{StaticResource PrimaryButtonStyle}"
+            Content="{Binding HandInFileSelectorChooseAttachmentButtonText}"
+            Command="{Binding AddAttachmentCommand}"/>
+    <Grid Margin="5" Column="0" Row="4" ColumnSpan="2" VerticalAlignment="Bottom">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+      </Grid.ColumnDefinitions>
+      <TextBlock Text="* "/>
+      <TextBlock Grid.Column="1" Text="{Binding HandInFileSelectorMainDocumentRequiredText}"/>
+      <TextBlock Grid.Column="2" Text=". "
+                 Visibility="{Binding Path=AllowedFileExtensions.Count, Converter={StaticResource EmptyListToVisibilityConverter}}"/>
+      <TextBlock Grid.Column="3"
+                 Visibility="{Binding Path=AllowedFileExtensions.Count, Converter={StaticResource EmptyListToVisibilityConverter}}"
+                 Text="{Binding HandInFileSelectorAllowedFormatsText}"/>
+      <TextBlock Grid.Column="4"
+                 Text="{Binding AllowedFileExtensions, Converter={StaticResource ListToCommaSeparatedStringConverter}}"/>
+    </Grid>
+  </Grid>
+</UserControl>

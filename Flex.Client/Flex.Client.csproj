@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Stella\AppData\Local\Arcanic\ITX Flex\Flex.Client.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E53FAB69-43EE-4A96-81A6-865E474AB553}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Flex.Client</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>3.8.1.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Castle.Windsor">
+      <HintPath>lib\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>lib\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="Arcanic.ITX.Flex.WebserviceClient">
+      <HintPath>lib\Arcanic.ITX.Flex.WebserviceClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Arcanic.ITX.Contracts.Flex">
+      <HintPath>lib\Arcanic.ITX.Contracts.Flex.dll</HintPath>
+    </Reference>
+    <Reference Include="Grabber.Core">
+      <HintPath>lib\Grabber.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>lib\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>lib\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Flex.Client.HtmlXamlConverter">
+      <HintPath>lib\Flex.Client.HtmlXamlConverter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Startup.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="View\CaptureWindow.xaml.cs">
+      <DependentUpon>viewcapturewindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\ClickablePathView.xaml.cs">
+      <DependentUpon>viewclickablepathview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\PathLinkView.xaml.cs">
+      <DependentUpon>viewpathlinkview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\ExamTimeLeftView.xaml.cs">
+      <DependentUpon>viewexamtimeleftview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\HandInFileSelectorView.xaml.cs">
+      <DependentUpon>viewhandinfileselectorview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\HandInFieldView.xaml.cs">
+      <DependentUpon>viewhandinfieldview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\HandInSubmittingView.xaml.cs">
+      <DependentUpon>viewhandinsubmittingview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\LastSaveView.xaml.cs">
+      <DependentUpon>viewlastsaveview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\HandInReceivedView.xaml.cs">
+      <DependentUpon>viewhandinreceivedview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\HealthCheckStatusView.xaml.cs">
+      <DependentUpon>viewhealthcheckstatusview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\HealthCheckView.xaml.cs">
+      <DependentUpon>viewhealthcheckview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\SubmitHandInView.xaml.cs">
+      <DependentUpon>viewsubmithandinview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\OkCancelPopupView.xaml.cs">
+      <DependentUpon>viewokcancelpopupview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\OkPopupView.xaml.cs">
+      <DependentUpon>viewokpopupview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\LoginView.xaml.cs">
+      <DependentUpon>viewloginview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\OngoingExamView.xaml.cs">
+      <DependentUpon>viewongoingexamview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\PinCodePopupView.xaml.cs">
+      <DependentUpon>viewpincodepopupview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\StateView.xaml.cs">
+      <DependentUpon>viewstateview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\UpdateProgramView.xaml.cs">
+      <DependentUpon>viewupdateprogramview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\WorkspaceView.xaml.cs">
+      <DependentUpon>viewworkspaceview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>viewmainwindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\ClickablePathViewModel.cs" />
+    <Compile Include="ViewModel\HandInFileViewModel.cs" />
+    <Compile Include="ViewModel\PathLinkViewModel.cs" />
+    <Compile Include="ViewModel\ExamTimeLeftViewModel.cs" />
+    <Compile Include="ViewModel\HandInFileSelectorViewModel.cs" />
+    <Compile Include="ViewModel\HandInFieldViewModel.cs" />
+    <Compile Include="ViewModel\HandInSubmittingViewModel.cs" />
+    <Compile Include="ViewModel\SubmitHandInViewModel.cs" />
+    <Compile Include="ViewModel\LastSaveViewModel.cs" />
+    <Compile Include="ViewModel\HandInReceivedViewModel.cs" />
+    <Compile Include="ViewModel\HealthCheckStatusViewModel.cs" />
+    <Compile Include="ViewModel\HealthCheckViewModel.cs" />
+    <Compile Include="ViewModel\OkCancelPopupViewModel.cs" />
+    <Compile Include="ViewModel\OkPopupViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\OngoingExamViewModel.cs" />
+    <Compile Include="ViewModel\PinCodePopupViewModel.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="ViewModel\StateHandlerViewModel.cs" />
+    <Compile Include="ViewModel\StateStepViewModel.cs" />
+    <Compile Include="ViewModel\StateViewModel.cs" />
+    <Compile Include="ViewModel\UpdateProgramWindowViewModel.cs" />
+    <Compile Include="ViewModel\WorkSpaceViewModel.cs" />
+    <Compile Include="Message\OnPinCodeLoginSuccessful.cs" />
+    <Compile Include="Message\OnPinCodePopupOpened.cs" />
+    <Compile Include="Message\OnTimeLeftUntilExamEnds.cs" />
+    <Compile Include="Message\OnTimeLeftUntilExamStarts.cs" />
+    <Compile Include="Message\OnNewBackupSettings.cs" />
+    <Compile Include="Message\OnNewGrabSettings.cs" />
+    <Compile Include="Message\OnHandInUploadProgressUpdated.cs" />
+    <Compile Include="Message\OnEnableHandInReceived.cs" />
+    <Compile Include="Message\OnAllowHandInReceived.cs" />
+    <Compile Include="Message\OnHandInFilesizeLimitLoaded.cs" />
+    <Compile Include="Message\OnHandInFieldsLoaded.cs" />
+    <Compile Include="Message\OnAllowedFileExtensionsLoaded.cs" />
+    <Compile Include="Message\OnExaminationUrlLoaded.cs" />
+    <Compile Include="Message\OnSubmitBlankHandIn.cs" />
+    <Compile Include="Message\OnSubmitHandIn.cs" />
+    <Compile Include="Message\OnExaminationDataLoaded.cs" />
+    <Compile Include="Message\OnHandInStatusHandInTypeUpdated.cs" />
+    <Compile Include="Message\OnWorkspacePathsSet.cs" />
+    <Compile Include="Message\OnWorkspaceDirectoryAccessDeniedPopupOpened.cs" />
+    <Compile Include="Message\OnOkCancelPopupClosing.cs" />
+    <Compile Include="Message\OnPinCodeLoginForceContinue.cs" />
+    <Compile Include="Message\OnOkPopupOpened.cs" />
+    <Compile Include="Message\OnOkCancelPopupOpened.cs" />
+    <Compile Include="Message\OnAllowClosingPinCodePopup.cs" />
+    <Compile Include="Message\OnLoginErrorPopupOpened.cs" />
+    <Compile Include="Message\OnHealthCheckReadMorePopupOpened.cs" />
+    <Compile Include="Installer\Installers.cs" />
+    <Compile Include="Service\AssemblyService.cs" />
+    <Compile Include="Service\AssignmentFileMetadataService.cs" />
+    <Compile Include="Service\AssignmentFileService.cs" />
+    <Compile Include="Service\AssignmentFileStorageService.cs" />
+    <Compile Include="Service\BackupService.cs" />
+    <Compile Include="Service\BoardingPassStorageService.cs" />
+    <Compile Include="Service\CheckConnectionHealthCheckService.cs" />
+    <Compile Include="Service\CheckFileAccessHealthCheckService.cs" />
+    <Compile Include="Service\CheckVersionHealthCheckService.cs" />
+    <Compile Include="Service\ConfigurationService.cs" />
+    <Compile Include="Service\DateTimeService.cs" />
+    <Compile Include="Service\DecryptionService.cs" />
+    <Compile Include="Service\DirectoryService.cs" />
+    <Compile Include="Service\DriveService.cs" />
+    <Compile Include="Service\FileService.cs" />
+    <Compile Include="Service\GlobalLogService.cs" />
+    <Compile Include="Service\GrabberService.cs" />
+    <Compile Include="Service\HandInFieldIdStorageService.cs" />
+    <Compile Include="Service\HandInFieldTypeValidator.cs" />
+    <Compile Include="Service\HandInFieldValueStorageService.cs" />
+    <Compile Include="Service\HandInFileService.cs" />
+    <Compile Include="Service\HandInResult.cs" />
+    <Compile Include="Service\HandInUploadService.cs" />
+    <Compile Include="Service\HashValidator.cs" />
+    <Compile Include="Service\CompositeHealthCheckService.cs" />
+    <Compile Include="Service\HeartbeatService.cs" />
+    <Compile Include="Service\HandInFileMetadataStorageService.cs" />
+    <Compile Include="Service\ITimerService.cs" />
+    <Compile Include="Service\LanguageService.cs" />
+    <Compile Include="Service\LogDumpService.cs" />
+    <Compile Include="Service\LoggerService.cs" />
+    <Compile Include="Service\LoggingFlexClientDecorator.cs" />
+    <Compile Include="Service\PathService.cs" />
+    <Compile Include="Service\PinCodeStorageService.cs" />
+    <Compile Include="Service\PinCodeValidator.cs" />
+    <Compile Include="Service\RegistryService.cs" />
+    <Compile Include="Service\RetryConnectionFlexClientDecorator.cs" />
+    <Compile Include="Service\RetryWebClientServiceDecorator.cs" />
+    <Compile Include="Service\SafePathService.cs" />
+    <Compile Include="Service\SelectDirectoryService.cs" />
+    <Compile Include="Service\DirectoryResult.cs" />
+    <Compile Include="Service\SelectFileService.cs" />
+    <Compile Include="Service\1SelectFileService.cs" />
+    <Compile Include="Service\ServerLogService.cs" />
+    <Compile Include="Service\StorageCleanerService.cs" />
+    <Compile Include="Service\ValidatorResult.cs" />
+    <Compile Include="Service\WebClientService.cs" />
+    <Compile Include="Service\WorkspaceStorageService.cs" />
+    <Compile Include="Service\DirectoryCreationValidator.cs" />
+    <Compile Include="Service\BoardingPassValidator.cs" />
+    <Compile Include="Service\LastFileSaveService.cs" />
+    <Compile Include="Model\HandInFileModel.cs" />
+    <Compile Include="Model\SubmitHandInFileModel.cs" />
+    <Compile Include="Model\HandInFieldDescriptionModel.cs" />
+    <Compile Include="Model\HandInFieldValueModel.cs" />
+    <Compile Include="Model\AssignmentDecryptionKeyModel.cs" />
+    <Compile Include="Model\AssignmentFileMetadata.cs" />
+    <Compile Include="Model\DecryptedAssignmentFileMetadata.cs" />
+    <Compile Include="Model\HealthCheckStatus.cs" />
+    <Compile Include="Model\OverallHealthCheckStatus.cs" />
+    <Compile Include="Model\BackupFileModel.cs" />
+    <Compile Include="Model\FileMetadataStatus.cs" />
+    <Compile Include="Model\DownloadFailedException.cs" />
+    <Compile Include="Model\NoConnectionException.cs" />
+    <Compile Include="Model\WorkspacePaths.cs" />
+    <Compile Include="Extension\Extension.cs" />
+    <Compile Include="Converter\BooleanInversionConverter.cs" />
+    <Compile Include="Converter\BooleanToHiddenVisibilityConverter.cs" />
+    <Compile Include="Converter\BooleanToStringValueConverter.cs" />
+    <Compile Include="Converter\EmptyListToVisibilityConverter.cs" />
+    <Compile Include="Converter\HandInFieldValueTypeToVisibilityConverter.cs" />
+    <Compile Include="Converter\HtmlToFlowDocumentConverter.cs" />
+    <Compile Include="Converter\ListToCommaSeparatedStringConverter.cs" />
+    <Compile Include="Converter\NullToVisibilityConverter.cs" />
+    <Compile Include="Converter\StateStepMaxWidthMultiValueConverter.cs" />
+    <Compile Include="Converter\StateStepPointMultiValueConverter.cs" />
+    <Compile Include="Converter\DownloadStateToVisibilityConverter.cs" />
+    <Compile Include="Converter\StateStepCenterMultiValueConverter.cs" />
+    <Compile Include="Converter\StateStepToBorderColorConverter.cs" />
+    <Compile Include="Converter\StateStepToBackgroundColorConverter.cs" />
+    <Compile Include="Converter\StateStepToFontWeightConverter.cs" />
+    <Compile Include="Converter\StateStepToTextColorConverter.cs" />
+    <Compile Include="Control\CommonActions.cs" />
+    <Compile Include="Control\GridHelper.cs" />
+    <Compile Include="Control\PropagateMouseWheelBehaviorUpwards.cs" />
+    <Compile Include="AutoUpdate\ApplicationExitProvider.cs" />
+    <Compile Include="AutoUpdate\CurrentVersionProvider.cs" />
+    <Compile Include="AutoUpdate\GuidGeneratorService.cs" />
+    <Compile Include="AutoUpdate\ProcessStarterService.cs" />
+    <Compile Include="AutoUpdate\IsCurrentVersionProvider.cs" />
+    <Compile Include="AutoUpdate\NullIsCurrentVersionProvider.cs" />
+    <Compile Include="AutoUpdate\NullUpdater.cs" />
+    <Compile Include="AutoUpdate\UpdaterProvider.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\1Annotations.cs" />
+    <Compile Include="Properties\2Annotations.cs" />
+    <Compile Include="Properties\3Annotations.cs" />
+    <Compile Include="Properties\4Annotations.cs" />
+    <Compile Include="Properties\5Annotations.cs" />
+    <Compile Include="Properties\6Annotations.cs" />
+    <Compile Include="Properties\7Annotations.cs" />
+    <Compile Include="Properties\8Annotations.cs" />
+    <Compile Include="Properties\9Annotations.cs" />
+    <Compile Include="Properties\10Annotations.cs" />
+    <Compile Include="Properties\11Annotations.cs" />
+    <Compile Include="Properties\12Annotations.cs" />
+    <Compile Include="Properties\13Annotations.cs" />
+    <Compile Include="Properties\14Annotations.cs" />
+    <Compile Include="Properties\15Annotations.cs" />
+    <Compile Include="Properties\16Annotations.cs" />
+    <Compile Include="Properties\17Annotations.cs" />
+    <Compile Include="Properties\18Annotations.cs" />
+    <Compile Include="Properties\19Annotations.cs" />
+    <Compile Include="Properties\20Annotations.cs" />
+    <Compile Include="Properties\21Annotations.cs" />
+    <Compile Include="Properties\22Annotations.cs" />
+    <Compile Include="Properties\23Annotations.cs" />
+    <Compile Include="Properties\24Annotations.cs" />
+    <Compile Include="Properties\25Annotations.cs" />
+    <Compile Include="Properties\26Annotations.cs" />
+    <Compile Include="Properties\27Annotations.cs" />
+    <Compile Include="Properties\28Annotations.cs" />
+    <Compile Include="Properties\29Annotations.cs" />
+    <Compile Include="Properties\30Annotations.cs" />
+    <Compile Include="View\ICaptureWindow.cs" />
+    <Compile Include="ViewModel\IExamTimeLeftViewModel.cs" />
+    <Compile Include="ViewModel\IHandInFieldViewModel.cs" />
+    <Compile Include="ViewModel\IHandInSubmittingViewModel.cs" />
+    <Compile Include="ViewModel\IHandInFileSelectorViewModel.cs" />
+    <Compile Include="ViewModel\ISubmitHandInViewModel.cs" />
+    <Compile Include="ViewModel\ILastSaveViewModel.cs" />
+    <Compile Include="ViewModel\IBaseViewModel.cs" />
+    <Compile Include="ViewModel\IHandInReceivedViewModel.cs" />
+    <Compile Include="ViewModel\IHealthCheckViewModel.cs" />
+    <Compile Include="ViewModel\ILoginViewModel.cs" />
+    <Compile Include="ViewModel\IMainWindowViewModel.cs" />
+    <Compile Include="ViewModel\IOngoingExamViewModel.cs" />
+    <Compile Include="ViewModel\IStateStepViewModel.cs" />
+    <Compile Include="ViewModel\IWorkSpaceViewModel.cs" />
+    <Compile Include="ViewModel\LoginResult.cs" />
+    <Compile Include="ViewModel\IStateHandlerViewModel.cs" />
+    <Compile Include="ViewModel\IStateViewModel.cs" />
+    <Compile Include="ViewModel\ViewState.cs" />
+    <Compile Include="ViewModel\IUpdateProgramViewModel.cs" />
+    <Compile Include="Message\OnPinCodeLoginCancelled.cs" />
+    <Compile Include="Message\OnLanguageChanged.cs" />
+    <Compile Include="Message\OnHandInFieldInputLostFocus.cs" />
+    <Compile Include="Message\OnInitiateSubmitHandIn.cs" />
+    <Compile Include="Message\OnSuccessfulLogin.cs" />
+    <Compile Include="Message\OnUpdateFinished.cs" />
+    <Compile Include="Message\OnExamStarted.cs" />
+    <Compile Include="Message\OnCheckForUpdates.cs" />
+    <Compile Include="Message\OnSuccessfulHealthCheck.cs" />
+    <Compile Include="Message\OnLoginErrorPopupClosed.cs" />
+    <Compile Include="Message\OnOkPopupClosing.cs" />
+    <Compile Include="Message\OnStartHealthCheck.cs" />
+    <Compile Include="Message\OnClosingProgramRequested.cs" />
+    <Compile Include="Service\IAssemblyService.cs" />
+    <Compile Include="Service\IAssignmentFileMetadataService.cs" />
+    <Compile Include="Service\IAssignmentFileStorageService.cs" />
+    <Compile Include="Service\IBackupService.cs" />
+    <Compile Include="Service\IConfigurationService.cs" />
+    <Compile Include="Service\IDecryptionService.cs" />
+    <Compile Include="Service\IGrabberService.cs" />
+    <Compile Include="Service\IHandInFieldTypeValidator.cs" />
+    <Compile Include="Service\IHandInFileService.cs" />
+    <Compile Include="Service\IHashValidator.cs" />
+    <Compile Include="Service\IAssignmentFileService.cs" />
+    <Compile Include="Service\IBoardingPassStorageService.cs" />
+    <Compile Include="Service\IBoardingPassValidator.cs" />
+    <Compile Include="Service\IDateTimeService.cs" />
+    <Compile Include="Service\IDirectoryService.cs" />
+    <Compile Include="Service\IDriveService.cs" />
+    <Compile Include="Service\IFileService.cs" />
+    <Compile Include="Service\ICompositeHealthCheckService.cs" />
+    <Compile Include="Service\IGlobalLogService.cs" />
+    <Compile Include="Service\IHandInFieldIdStorageService.cs" />
+    <Compile Include="Service\IHandInFieldValueStorageService.cs" />
+    <Compile Include="Service\IHandInUploadService.cs" />
+    <Compile Include="Service\IHealthCheckService.cs" />
+    <Compile Include="Service\IHeartbeatService.cs" />
+    <Compile Include="Service\IHandInFileMetadataStorageService.cs" />
+    <Compile Include="Service\ILanguageService.cs" />
+    <Compile Include="Service\ILogDumpService.cs" />
+    <Compile Include="Service\ILoggerService.cs" />
+    <Compile Include="Service\IPinCodeStorageService.cs" />
+    <Compile Include="Service\IRegistryService.cs" />
+    <Compile Include="Service\ISafePathService.cs" />
+    <Compile Include="Service\ISelectDirectoryService.cs" />
+    <Compile Include="Service\IStorageCleanerService.cs" />
+    <Compile Include="Service\1ITimerService.cs" />
+    <Compile Include="Service\IWorkspaceStorageService.cs" />
+    <Compile Include="Service\IDirectoryAccessValidator.cs" />
+    <Compile Include="Service\Language.cs" />
+    <Compile Include="Service\LogType.cs" />
+    <Compile Include="Service\IPathService.cs" />
+    <Compile Include="Service\IPinCodeValidator.cs" />
+    <Compile Include="Service\ISelectFilesService.cs" />
+    <Compile Include="Service\IServerLogService.cs" />
+    <Compile Include="Service\IWebClientService.cs" />
+    <Compile Include="Service\ILastFileSaveService.cs" />
+    <Compile Include="Model\HandInStatus.cs" />
+    <Compile Include="Model\SubmitHandInFileType.cs" />
+    <Compile Include="Model\HandInFieldValueType.cs" />
+    <Compile Include="Model\HandInSubmissionStatus.cs" />
+    <Compile Include="Model\HandInSubmitResult.cs" />
+    <Compile Include="Model\SubmissionResult.cs" />
+    <Compile Include="Model\InvalidPinCodeException.cs" />
+    <Compile Include="Model\LoginState.cs" />
+    <Compile Include="Model\DownloadState.cs" />
+    <Compile Include="Model\StateStep.cs" />
+    <Compile Include="Model\HandInType.cs" />
+    <Compile Include="AutoUpdate\IGuidGeneratorService.cs" />
+    <Compile Include="AutoUpdate\IProcessStarterService.cs" />
+    <Compile Include="AutoUpdate\IApplicationExitProvider.cs" />
+    <Compile Include="AutoUpdate\ICurrentVersionProvider.cs" />
+    <Compile Include="AutoUpdate\IIsCurrentVersionProvider.cs" />
+    <Compile Include="AutoUpdate\IUpdater.cs" />
+    <Compile Include="Properties\CanBeNullAttribute.cs" />
+    <Compile Include="Properties\NotNullAttribute.cs" />
+    <Compile Include="Properties\ItemNotNullAttribute.cs" />
+    <Compile Include="Properties\ItemCanBeNullAttribute.cs" />
+    <Compile Include="Properties\InvokerParameterNameAttribute.cs" />
+    <Compile Include="Properties\CannotApplyEqualityOperatorAttribute.cs" />
+    <Compile Include="Properties\ImplicitUseKindFlags.cs" />
+    <Compile Include="Properties\ImplicitUseTargetFlags.cs" />
+    <Compile Include="Properties\InstantHandleAttribute.cs" />
+    <Compile Include="Properties\PureAttribute.cs" />
+    <Compile Include="Properties\ProvidesContextAttribute.cs" />
+    <Compile Include="Properties\SourceTemplateAttribute.cs" />
+    <Compile Include="Properties\AspMvcMasterAttribute.cs" />
+    <Compile Include="Properties\AspMvcModelTypeAttribute.cs" />
+    <Compile Include="Properties\AspMvcPartialViewAttribute.cs" />
+    <Compile Include="Properties\AspMvcSuppressViewErrorAttribute.cs" />
+    <Compile Include="Properties\AspMvcDisplayTemplateAttribute.cs" />
+    <Compile Include="Properties\AspMvcEditorTemplateAttribute.cs" />
+    <Compile Include="Properties\AspMvcTemplateAttribute.cs" />
+    <Compile Include="Properties\AspMvcViewAttribute.cs" />
+    <Compile Include="Properties\AspMvcViewComponentAttribute.cs" />
+    <Compile Include="Properties\AspMvcViewComponentViewAttribute.cs" />
+    <Compile Include="Properties\AspMvcActionSelectorAttribute.cs" />
+    <Compile Include="Properties\RazorSectionAttribute.cs" />
+    <Compile Include="Properties\CollectionAccessType.cs" />
+    <Compile Include="Properties\AssertionMethodAttribute.cs" />
+    <Compile Include="Properties\AssertionConditionType.cs" />
+    <Compile Include="Properties\TerminatesProgramAttribute.cs" />
+    <Compile Include="Properties\LinqTunnelAttribute.cs" />
+    <Compile Include="Properties\NoEnumerationAttribute.cs" />
+    <Compile Include="Properties\RegexPatternAttribute.cs" />
+    <Compile Include="Properties\NoReorderAttribute.cs" />
+    <Compile Include="Properties\XamlItemsControlAttribute.cs" />
+    <Compile Include="Properties\XamlItemBindingOfItemsControlAttribute.cs" />
+    <Compile Include="Properties\AspDataFieldAttribute.cs" />
+    <Compile Include="Properties\AspDataFieldsAttribute.cs" />
+    <Compile Include="Properties\AspMethodPropertyAttribute.cs" />
+    <Compile Include="Properties\RazorHelperCommonAttribute.cs" />
+    <Compile Include="Properties\RazorLayoutAttribute.cs" />
+    <Compile Include="Properties\RazorWriteLiteralMethodAttribute.cs" />
+    <Compile Include="Properties\RazorWriteMethodAttribute.cs" />
+    <Compile Include="Properties\RazorWriteMethodParameterAttribute.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="license\castlewindsorcastlecorelicense.txt" />
+    <Resource Include="license\commonservicelocatorlicense.txt" />
+    <Resource Include="license\mvvmlightlibslicense.txt" />
+    <Resource Include="license\newtonsoftjsonlicense.txt" />
+    <Resource Include="license\restsharplicense.txt" />
+    <Resource Include="license\taskparallellibrarylicense.txt" />
+    <Resource Include="license\winapicp_windowsapicodepacklicense.txt" />
+    <Resource Include="resources\digitaleksamen.icon_256.ico" />
+    <Resource Include="resources\digitaleksamen.logo.jpg" />
+    <Resource Include="resources\errorcheckmark.png" />
+    <Resource Include="resources\locked.png" />
+    <Resource Include="resources\okcheckmark.png" />
+    <Resource Include="resources\removeicon.png" />
+    <Resource Include="resources\unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Itx\Flex\Client\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="app.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\capturewindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\clickablepathview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\examtimeleftview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\handinfieldview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\handinfileselectorview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\handinreceivedview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\handinsubmittingview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\healthcheckstatusview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\healthcheckview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\lastsaveview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\loginview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\mainwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\okcancelpopupview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\okpopupview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\ongoingexamview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\pathlinkview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\pincodepopupview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\stateview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\submithandinview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\updateprogramview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\workspaceview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
